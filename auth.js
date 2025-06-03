@@ -13,7 +13,7 @@ function getAuthToken() {
 }
 
 // Fungsi untuk mendapatkan user data
-function getCurrentUser() {
+function getCurrentUser () {
     const userData = localStorage.getItem('polling_user');
     return userData ? JSON.parse(userData) : null;
 }
@@ -32,7 +32,7 @@ function isAuthenticated() {
 
 // Fungsi untuk redirect berdasarkan role
 function redirectBasedOnRole() {
-    const user = getCurrentUser();
+    const user = getCurrentUser ();
     if (!user) return;
 
     const currentPage = window.location.pathname.split('/').pop();
@@ -68,7 +68,7 @@ function validateSession() {
 export {
     setAuthSession,
     getAuthToken,
-    getCurrentUser,
+    getCurrentUser ,
     logout,
     isAuthenticated,
     redirectBasedOnRole,
