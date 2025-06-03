@@ -1,6 +1,6 @@
 import { 
     setAuthSession, 
-    getCurrentUser, 
+    getCurrentUser , 
     logout, 
     validateSession,
     redirectBasedOnRole
@@ -40,12 +40,12 @@ async function handleLogin(e) {
     const password = document.getElementById('password').value;
     
     try {
-        const response = await fetch('https://your-backend-api.com/login', {
+        const response = await fetch('https://your-backend-api.com', { // Ganti dengan URL Web App Anda
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username, password }),
+            body: JSON.stringify({ action: 'login', username, password, key: 'YOUR_SECURE_API_KEY' }), // Ganti dengan API key Anda
             credentials: 'same-origin'
         });
         
@@ -67,7 +67,7 @@ async function handleLogin(e) {
 
 // Load page content berdasarkan role
 function loadPageContent() {
-    const user = getCurrentUser();
+    const user = getCurrentUser ();
     if (!user) return;
     
     // Load content sesuai role
