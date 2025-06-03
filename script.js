@@ -45,7 +45,7 @@ async function handleLogin(e) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ action: 'login', username, password, key: 'YOUR_SECURE_API_KEY' }), // Ganti dengan API key Anda
+            body: JSON.stringify({ action: 'login', username, password, key: 'aodhoaidjwodjoijdiwjdad' }), // Ganti dengan API key Anda
             credentials: 'same-origin'
         });
         
