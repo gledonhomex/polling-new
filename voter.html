@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Voter - Polling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dashboard Voter</h1>
+            <button id="logoutBtn" class="btn logout">Logout</button>
+        </header>
+        <main>
+            <!-- Konten voter -->
+        </main>
+        <footer>
+            <p>&copy; 2023 Polling Website</p>
+        </footer>
+    </div>
+    <script type="module">
+        import { validateSession } from './auth.js';
+        validateSession();
+    </script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
