@@ -1,72 +1,57 @@
-/* Global Styles */
-* {
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f8f9fa;
-    color: #343a40;
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    color: #007bff;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 2em;
 }
 
 .btn {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
+    background: #35424a;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    font-size: 1em;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background: #e8491d;
 }
 
-.btn.logout {
-    background-color: #dc3545;
+.logout {
+    background: #e8491d;
 }
 
-.btn.logout:hover {
-    background-color: #c82333;
+.logout:hover {
+    background: #35424a;
 }
 
-.error {
-    color: #dc3545;
-    margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    color: #6c757d;
-}
-
-/* Form Styles */
 .form-group {
     margin-bottom: 15px;
 }
@@ -74,33 +59,24 @@ footer {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ced4da;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-.form-group input:focus {
-    border-color: #007bff;
-    outline: none;
+.error {
+    color: #e8491d;
+    font-weight: bold;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    header {
-        padding-top: 20px;
-    }
-    
-    .btn.logout {
-        top: 20px;
-    }
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 20px;
 }
